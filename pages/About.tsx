@@ -17,27 +17,33 @@ const About = () => {
         {/* Main Content */}
         <div className="md:col-span-7">
           <div className="prose prose-invert prose-lg max-w-none">
-            <p className="text-2xl text-white font-light leading-relaxed mb-8">
-              I am a business executive focused on Strategy, Growth, and Innovation. 
-              Currently, I serve as the <strong className="text-brand-blue">COO of SWISH XR</strong>, 
-              launching groundbreaking sports technology to the world.
+            {/* Intro / Current Roles */}
+            <p className="text-xl text-white font-light leading-relaxed mb-6">
+              Most recently, Luis Romo serves as Chief Operating Officer at <strong className="text-brand-blue">Swish XR</strong>, the first XR/VR basketball gaming system.
             </p>
             
+            <p className="text-gray-400 mb-6">
+              He also serves as Chief of Strategy and New Business Development at <strong>Vora Vera LLC</strong>, where he leads the development and launch of consumer brands, building a $50M portfolio of health and wellness businesses. He drives the strategic growth vision for the company's product portfolios, collaborating with Amazon’s Global Logistics and multichannel fulfillment capabilities. His efforts include end-to-end supply chain sourcing and due diligence across LATAM, Europe, and China, while exploring new growth strategies for social commerce through mobile application platforms like TikTok and large-scale influencer marketing technologies.
+            </p>
+
             <h3 className="text-white font-heading text-2xl mt-12 mb-6">THE JOURNEY</h3>
+            
             <p className="text-gray-400 mb-6">
-              My career has been built on the belief that ideas are cheap, and execution is everything. 
-              From 2012 to 2022, I founded and led <strong>PurpleSun Inc.</strong>, a healthcare technology startup, 
-              from a concept to a successful exit.
+              Prior to Vora Vera, Luis was the Founder and CEO of <strong>PurpleSun Inc.</strong>, where his innovative healthcare technology earned recognition in <em>The Wall Street Journal</em> as one of the “Game Changers in Health Tech.” Under his leadership, PurpleSun developed a groundbreaking disinfection system, the first mobile UV system UL certified for large-scale healthcare equipment, as featured in UL News.
             </p>
+
             <p className="text-gray-400 mb-6">
-              During that decade, I didn't just sit in a boardroom. I secured 20+ global patents, navigated 
-              complex regulatory landscapes (FDA, UL, ASTM), and closed deals with some of the largest health 
-              systems in the country. We achieved 10x revenue growth and I personally secured a $40M M&A term sheet.
+              As an executive leader, Luis has led negotiations for fundraising, commercial, and M&A transactions, including multiple mega deals with multibillion-dollar corporations, securing high-value contracts while managing complex risks and gaining internal and external stakeholder buy-in. His negotiation expertise resulted in $40M in strategic M&A offers and private equity transactions, and his leadership drove market growth by directly closing multimillion-dollar business deals.
             </p>
-            <p className="text-gray-400 mb-6">
-              At <strong>VORA VERA LLC</strong>, I pivoted to helping a broader portfolio, optimizing supply chains 
-              for a $50M portfolio and establishing key partnerships with Amazon Global Logistics.
+            
+            <p className="text-gray-400 mb-12">
+              Luis’ work has garnered widespread media attention, including features on CBS News for hospital disinfection technology and PR Newswire for his partnership with the U.S. Air Force during the 2020 pandemic to deliver a “weapon of defense” against pathogens. His vision and ability to scale businesses from 0 to 1, combined with being the inventor and creator of a global intellectual property portfolio of 30+ patents and trademarks, have positioned him as a recognized leader in business growth and healthcare technology.
             </p>
+
+             <blockquote className="border-l-4 border-brand-blue pl-6 italic text-xl text-gray-300 my-12">
+              "Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God."
+              <footer className="text-sm text-brand-blue font-bold mt-2 uppercase not-italic">— Romans 12:2</footer>
+            </blockquote>
 
             <h3 className="text-white font-heading text-2xl mt-12 mb-6">EDUCATION</h3>
             <ul className="space-y-4 text-gray-400 list-none pl-0">

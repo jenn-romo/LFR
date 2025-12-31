@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Linkedin, Mail } from 'lucide-react';
+import { Menu, X, Linkedin, Mail, ArrowUpRight } from 'lucide-react';
 
 const NavLink = ({ to, children, onClick }: { to: string; children?: React.ReactNode; onClick?: () => void }) => {
   const location = useLocation();
@@ -36,19 +36,27 @@ const Layout = ({ children }: { children?: React.ReactNode }) => {
       {/* Navigation */}
       <nav
         className={`fixed w-full z-50 transition-all duration-300 border-b border-white/5 ${
-          isScrolled ? 'bg-brand-dark/95 backdrop-blur-md py-3' : 'bg-brand-dark py-5'
+          isScrolled ? 'bg-brand-dark/95 backdrop-blur-md py-4' : 'bg-brand-dark py-6'
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
           {/* Logo Section */}
-          <Link to="/" className="group flex flex-col z-50">
+          <Link to="/" className="group flex flex-col z-50 w-max">
              <div className="text-2xl font-heading font-bold tracking-widest text-white leading-none">
-               LUIS <span className="text-brand-cyan">F.</span> ROMO
+               LUIS F. ROMO
              </div>
-             <div className="flex gap-1 mt-1.5 opacity-80 group-hover:opacity-100 transition-opacity">
-               <div className="h-1 w-6 bg-gray-500 rounded-sm"></div>
-               <div className="h-1 w-8 bg-brand-red rounded-sm"></div>
-               <div className="h-1 w-16 bg-brand-red rounded-sm"></div>
+             <div className="flex items-center mt-2 h-1.5 opacity-90 group-hover:opacity-100 transition-opacity">
+               {/* Dark Grey Bar for LUIS */}
+               <div className="w-[62px] bg-[#333] mr-1"></div>
+               
+               {/* Light Blue Square for F */}
+               <div className="w-[14px] bg-[#93C5FD] mr-0.5"></div>
+               
+               {/* Cyan Square for . */}
+               <div className="w-[14px] bg-brand-cyan mr-1"></div>
+               
+               {/* Red Bar for ROMO */}
+               <div className="w-[82px] bg-brand-red"></div>
              </div>
           </Link>
 
@@ -58,7 +66,6 @@ const Layout = ({ children }: { children?: React.ReactNode }) => {
             <NavLink to="/about">About</NavLink>
             <NavLink to="/experience">Work</NavLink>
             <NavLink to="/media">Media</NavLink>
-            <NavLink to="/blog">Blog</NavLink>
             <NavLink to="/contact">Contact</NavLink>
             
             <a 
@@ -70,7 +77,7 @@ const Layout = ({ children }: { children?: React.ReactNode }) => {
                   el.scrollIntoView({ behavior: 'smooth' });
                 }
               }}
-              className="bg-brand-cyan hover:bg-white hover:text-brand-dark text-brand-dark px-6 py-2.5 font-bold uppercase tracking-wider text-xs transition-all duration-300"
+              className="bg-brand-cyan hover:bg-white text-black px-6 py-3 font-bold uppercase tracking-wider text-xs transition-all duration-300"
             >
               Work With Luis
             </a>
@@ -95,12 +102,11 @@ const Layout = ({ children }: { children?: React.ReactNode }) => {
           <NavLink to="/about" onClick={() => setIsMobileMenuOpen(false)}>About</NavLink>
           <NavLink to="/experience" onClick={() => setIsMobileMenuOpen(false)}>Work</NavLink>
           <NavLink to="/media" onClick={() => setIsMobileMenuOpen(false)}>Media</NavLink>
-          <NavLink to="/blog" onClick={() => setIsMobileMenuOpen(false)}>Blog</NavLink>
           <NavLink to="/contact" onClick={() => setIsMobileMenuOpen(false)}>Contact</NavLink>
           <a 
             href="#work-with-luis" 
             onClick={() => setIsMobileMenuOpen(false)}
-            className="bg-brand-cyan text-brand-dark px-8 py-3 font-bold uppercase tracking-wider text-sm"
+            className="bg-brand-cyan text-black px-8 py-3 font-bold uppercase tracking-wider text-sm"
           >
             Work With Luis
           </a>
@@ -113,45 +119,83 @@ const Layout = ({ children }: { children?: React.ReactNode }) => {
       </main>
 
       {/* Footer */}
-      <footer className="bg-brand-gray/20 border-t border-white/5 py-12 mt-auto">
+      <footer className="bg-[#050505] border-t border-white/5 py-16 mt-auto">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid md:grid-cols-4 gap-12 mb-12">
-            <div className="col-span-1 md:col-span-2">
-              <h3 className="font-heading text-xl font-bold mb-4 text-white">LUIS F. ROMO</h3>
-              <p className="text-gray-400 mb-6 max-w-sm">
-                Executive Leadership, Strategy, and Operational Excellence for high-growth companies.
+          <div className="grid md:grid-cols-12 gap-12">
+            
+            {/* Brand Column */}
+            <div className="md:col-span-5">
+              <Link to="/" className="group flex flex-col mb-6 inline-block w-max">
+                 <div className="text-2xl font-heading font-bold tracking-widest text-white leading-none">
+                   LUIS F. ROMO
+                 </div>
+                 <div className="flex items-center mt-2 h-1.5 opacity-90 group-hover:opacity-100 transition-opacity">
+                   {/* Dark Grey Bar */}
+                   <div className="w-[62px] bg-[#333] mr-1"></div>
+                   
+                   {/* Light Blue Square */}
+                   <div className="w-[14px] bg-[#93C5FD] mr-0.5"></div>
+                   
+                   {/* Cyan Square */}
+                   <div className="w-[14px] bg-brand-cyan mr-1"></div>
+                   
+                   {/* Red Bar */}
+                   <div className="w-[82px] bg-brand-red"></div>
+                 </div>
+              </Link>
+              <p className="text-gray-400 mb-8 max-w-sm text-sm leading-relaxed">
+                Business Executive specializing in Strategy, Growth, and Innovation. 
+                Partnering with leaders to execute operational excellence and scale ventures.
               </p>
               <div className="flex gap-4">
-                <a href="https://www.linkedin.com/in/luisfromo/" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-brand-cyan transition-colors">
-                  <Linkedin size={24} />
+                <a href="https://www.linkedin.com/in/luisfromo/" target="_blank" rel="noreferrer" className="text-white hover:text-brand-cyan transition-colors border border-white/20 p-2 rounded-sm">
+                  <Linkedin size={20} />
                 </a>
-                <a href="mailto:luis@blackliongrowth.com" className="text-gray-400 hover:text-brand-cyan transition-colors">
-                  <Mail size={24} />
+                <a href="mailto:luis@blackliongrowth.com" className="text-white hover:text-brand-cyan transition-colors border border-white/20 p-2 rounded-sm">
+                  <Mail size={20} />
                 </a>
               </div>
             </div>
             
-            <div>
-              <h4 className="font-bold text-white uppercase tracking-wider mb-4 text-xs">Menu</h4>
-              <ul className="space-y-2 text-gray-400 text-sm">
-                <li><Link to="/about" className="hover:text-brand-cyan">About</Link></li>
-                <li><Link to="/experience" className="hover:text-brand-cyan">Work</Link></li>
-                <li><Link to="/media" className="hover:text-brand-cyan">Media</Link></li>
-                <li><Link to="/blog" className="hover:text-brand-cyan">Insights</Link></li>
+            <div className="md:col-span-1"></div>
+
+            {/* Quick Links */}
+            <div className="md:col-span-3">
+              <h4 className="font-heading font-bold text-white uppercase tracking-widest mb-6 text-sm">Quick Links</h4>
+              <ul className="space-y-4 text-gray-400 text-sm">
+                <li><Link to="/about" className="hover:text-white transition-colors">About Luis</Link></li>
+                <li><Link to="/experience" className="hover:text-white transition-colors">Experience</Link></li>
+                <li><Link to="/media" className="hover:text-white transition-colors">Media & Press</Link></li>
               </ul>
             </div>
 
-            <div>
-              <h4 className="font-bold text-white uppercase tracking-wider mb-4 text-xs">Connect</h4>
-              <a href="mailto:luis@blackliongrowth.com" className="text-brand-cyan hover:text-white transition-colors text-sm font-medium">
-                luis@blackliongrowth.com
-              </a>
-              <p className="text-gray-500 text-sm mt-2">Orlando, FL</p>
+            {/* Services */}
+            <div className="md:col-span-3">
+              <h4 className="font-heading font-bold text-white uppercase tracking-widest mb-6 text-sm">Services</h4>
+              <ul className="space-y-4 text-gray-400 text-sm">
+                 <li>
+                   <a href="https://growthsprintsystem.com" target="_blank" rel="noreferrer" className="hover:text-white transition-colors flex items-center gap-2 group">
+                     Growth Sprint <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                   </a>
+                 </li>
+                 <li>
+                   <a href="https://salesgrowthmultiplier.com" target="_blank" rel="noreferrer" className="hover:text-white transition-colors flex items-center gap-2 group">
+                     Sales Multiplier <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                   </a>
+                 </li>
+                 <li>
+                   <a href="https://contentgrowthmultiplier.com" target="_blank" rel="noreferrer" className="hover:text-white transition-colors flex items-center gap-2 group">
+                     Content Multiplier <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                   </a>
+                 </li>
+              </ul>
             </div>
+
           </div>
           
-          <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-xs uppercase tracking-widest">
+          <div className="border-t border-white/10 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center text-[#444] text-[10px] uppercase tracking-widest font-bold">
             <p>&copy; {new Date().getFullYear()} Luis F. Romo. All rights reserved.</p>
+            <p className="mt-2 md:mt-0">Designed for Execution</p>
           </div>
         </div>
       </footer>
