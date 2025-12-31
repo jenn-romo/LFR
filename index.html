@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luis F. Romo | Strategy. Growth. Execution.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                dark: '#161616',
+                gray: '#2D2D2D',
+                light: '#E7E7E7',
+                blue: '#60B7E3',
+                blueDark: '#01236B',
+                blueAccent: '#708FBF',
+                blueLight: '#A4D6EF',
+                red: '#FF0000',
+              }
+            },
+            fontFamily: {
+              sans: ['Montserrat', 'sans-serif'],
+              heading: ['Orbitron', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #161616;
+        color: #E7E7E7;
+        font-family: 'Montserrat', sans-serif;
+        overflow-x: hidden;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Orbitron', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+      .gradient-text {
+        background: linear-gradient(90deg, #60B7E3 0%, #A4D6EF 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .bg-grid-pattern {
+        background-image: linear-gradient(to right, #2d2d2d 1px, transparent 1px),
+                          linear-gradient(to bottom, #2d2d2d 1px, transparent 1px);
+        background-size: 40px 40px;
+        mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+        -webkit-mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
+    "vite": "https://esm.sh/vite@^7.3.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.11.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
