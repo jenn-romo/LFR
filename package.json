@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "gcp-build": "vite build",
     "preview": "vite preview",
     "start": "node server.js"
   },
@@ -13,9 +14,7 @@
     "lucide-react": "^0.344.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.22.1"
-  },
-  "devDependencies": {
+    "react-router-dom": "^6.22.1",
     "@types/react": "^18.2.56",
     "@types/react-dom": "^18.2.19",
     "@vitejs/plugin-react": "^4.2.1",
