@@ -57,7 +57,7 @@ const Home = () => {
       {/* 2. Stats Section */}
       <section className="py-20 bg-[#050505] border-y border-white/5">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div className="grid md:grid-cols-3 gap-12">
             {/* Stat 1 */}
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 rounded-full bg-blue-900/20 border border-blue-500/20 flex items-center justify-center text-brand-cyan flex-shrink-0">
@@ -84,18 +84,8 @@ const Home = () => {
                 <Flag size={24} />
               </div>
               <div>
-                <div className="text-3xl font-heading font-bold text-white mb-1">$10M+</div>
-                <div className="text-xs font-bold text-gray-400 uppercase tracking-widest">Customer Contracts</div>
-              </div>
-            </div>
-             {/* Stat 4 */}
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-full bg-blue-900/20 border border-blue-500/20 flex items-center justify-center text-brand-cyan flex-shrink-0">
-                <Zap size={24} />
-              </div>
-              <div>
-                <div className="text-3xl font-heading font-bold text-white mb-1">$40M</div>
-                <div className="text-xs font-bold text-gray-400 uppercase tracking-widest">M&A Term Sheet</div>
+                <div className="text-3xl font-heading font-bold text-white mb-1">$15M+</div>
+                <div className="text-xs font-bold text-gray-400 uppercase tracking-widest">Business Deals</div>
               </div>
             </div>
           </div>
@@ -140,17 +130,17 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 4. Featured In */}
-      <section className="py-16 bg-[#020202] border-y border-white/5">
+      {/* 4. Featured In - First Instance */}
+      <section className="py-16 bg-brand-red border-y border-white/5">
         <div className="max-w-7xl mx-auto px-6">
            <div className="flex flex-col md:flex-row flex-wrap justify-between items-center gap-8 md:gap-16">
-             <span className="text-xs font-bold uppercase tracking-widest text-[#333] mb-4 md:mb-0">Featured In</span>
-             <div className="flex flex-wrap justify-center gap-12 md:gap-16 opacity-40 hover:opacity-100 transition-opacity duration-500 grayscale items-center">
-                <span className="text-2xl md:text-3xl font-heading font-bold text-white">WSJ</span>
-                <span className="text-2xl md:text-3xl font-heading font-bold text-white">CBS NEWS</span>
-                <span className="text-2xl md:text-3xl font-heading font-bold text-white">NEWSWEEK</span>
-                <span className="text-2xl md:text-3xl font-heading font-bold text-white">UL</span>
-                <span className="text-2xl md:text-3xl font-heading font-bold text-white">AJIC</span>
+             <span className="text-xs font-bold uppercase tracking-widest text-white/80 mb-4 md:mb-0">Featured In</span>
+             <div className="flex flex-wrap justify-center gap-12 md:gap-16 opacity-100 items-center">
+                <span className="text-2xl md:text-3xl font-heading font-bold text-white hover:opacity-80 transition-opacity">WSJ</span>
+                <span className="text-2xl md:text-3xl font-heading font-bold text-white hover:opacity-80 transition-opacity">CBS NEWS</span>
+                <span className="text-2xl md:text-3xl font-heading font-bold text-white hover:opacity-80 transition-opacity">NEWSWEEK</span>
+                <span className="text-2xl md:text-3xl font-heading font-bold text-white hover:opacity-80 transition-opacity">UL</span>
+                <span className="text-2xl md:text-3xl font-heading font-bold text-white hover:opacity-80 transition-opacity">AJIC</span>
              </div>
           </div>
         </div>
@@ -170,65 +160,26 @@ const Home = () => {
             {/* Row 1 */}
             <div className="bg-[#0A0A0A] border border-white/5 p-10 hover:border-brand-cyan/30 transition-colors group">
                <h3 className="text-2xl font-heading font-bold text-white mb-4 group-hover:text-brand-cyan transition-colors">Global IP Moat</h3>
-               <p className="text-gray-400 leading-relaxed">Secured 20+ patents across US, Canada, Japan, Europe, Australia, and China.</p>
+               <p className="text-gray-400 leading-relaxed">Lead inventor, drafter, and strategist around intellectual property, patent filing, portfolio strategy defense and offense.</p>
             </div>
             <div className="bg-[#0A0A0A] border border-white/5 p-10 hover:border-brand-cyan/30 transition-colors group">
-               <h3 className="text-2xl font-heading font-bold text-white mb-4 group-hover:text-brand-cyan transition-colors">Startup-to-Exit</h3>
-               <p className="text-gray-400 leading-relaxed">Founder/CEO of PurpleSun. Led from concept to multi-million dollar tech sale.</p>
+               <h3 className="text-2xl font-heading font-bold text-white mb-4 group-hover:text-brand-cyan transition-colors">Enterprise Dealmaker</h3>
+               <p className="text-gray-400 leading-relaxed">Successfully transacted from start-ups on a napkin to multi-billion dollar corporations.</p>
             </div>
             {/* Row 2 */}
             <div className="bg-[#0A0A0A] border border-white/5 p-10 hover:border-brand-cyan/30 transition-colors group">
-               <h3 className="text-2xl font-heading font-bold text-white mb-4 group-hover:text-brand-cyan transition-colors">Enterprise Dealmaker</h3>
-               <p className="text-gray-400 leading-relaxed">Secured &gt;$10M in customer contracts and scaled revenues 10x.</p>
-            </div>
-            <div className="bg-[#0A0A0A] border border-white/5 p-10 hover:border-brand-cyan/30 transition-colors group">
                <h3 className="text-2xl font-heading font-bold text-white mb-4 group-hover:text-brand-cyan transition-colors">Regulatory Standard</h3>
-               <p className="text-gray-400 leading-relaxed">Helped secure new global standard via ASTM E35 committee vote.</p>
+               <p className="text-gray-400 leading-relaxed">Secured safety and regulatory standard compliance via ASTM E35 committee vote.</p>
             </div>
-             {/* Row 3 */}
             <div className="bg-[#0A0A0A] border border-white/5 p-10 hover:border-brand-cyan/30 transition-colors group">
                <h3 className="text-2xl font-heading font-bold text-white mb-4 group-hover:text-brand-cyan transition-colors">Manufacturing Scale</h3>
-               <p className="text-gray-400 leading-relaxed">Achieved 65%+ gross margins and ISO 13485 quality management systems.</p>
-            </div>
-            <div className="bg-[#0A0A0A] border border-white/5 p-10 hover:border-brand-cyan/30 transition-colors group">
-               <h3 className="text-2xl font-heading font-bold text-white mb-4 group-hover:text-brand-cyan transition-colors">$50M Portfolio</h3>
-               <p className="text-gray-400 leading-relaxed">Chief of Strategy executing business plans for VORA VERA's major portfolio.</p>
+               <p className="text-gray-400 leading-relaxed">Successfully launched many mechanical and electrical products as well as software and service products from prototype to full commercial manufacturing.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 6. Current Focus */}
-      <section className="py-32 bg-gradient-to-br from-blue-950 to-[#020617] relative overflow-hidden text-center border-t border-white/5">
-         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(255,255,255,0.15) 1px, transparent 0)', backgroundSize: '40px 40px' }}></div>
-         <div className="max-w-4xl mx-auto px-6 relative z-10 flex flex-col items-center">
-           <div className="bg-brand-red px-4 py-2 mb-8 inline-block transform hover:scale-105 transition-transform cursor-default">
-             <span className="text-white font-bold uppercase tracking-widest text-xs">Current Focus</span>
-           </div>
-           
-           <h2 className="text-5xl md:text-7xl font-heading font-bold text-white mb-4 uppercase">
-             COO @ SWISH XR
-           </h2>
-           
-           <p className="text-2xl text-white/90 italic font-serif mb-10">"Next Generation Sports Training."</p>
-           
-           <p className="text-xl text-blue-100 mb-12 leading-relaxed max-w-2xl mx-auto">
-             Leading the launch of <strong className="text-white">SWISH XR Hooper</strong> — the world's most advanced basketball simulator. 
-             Experience realistic gameplay, drills, and skill development without the need for goggles or headsets.
-           </p>
-           
-           <a 
-             href="https://swishxr.com" 
-             target="_blank" 
-             rel="noreferrer"
-             className="inline-flex items-center gap-2 text-brand-cyan font-bold uppercase tracking-widest hover:text-white transition-colors text-sm"
-           >
-             See What I'm Building <ArrowRight className="w-4 h-4" />
-           </a>
-         </div>
-      </section>
-
-      {/* 7. Services Section: HOW CAN I HELP YOU? */}
+      {/* Services Section: HOW CAN I HELP YOU? */}
       <section id="work-with-luis" className="py-24 bg-[#050505] border-t border-white/5">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-20">
@@ -265,7 +216,7 @@ const Home = () => {
             </a>
 
             {/* Card 2: Sales - Highlighted */}
-            <a href="https://salesgrowthmultiplier.com" target="_blank" rel="noreferrer" className="group flex flex-col bg-[#111] border-t-4 border-t-brand-cyan border-x border-b border-white/5 hover:border-brand-cyan/50 transition-all duration-300 relative transform md:-translate-y-4">
+            <a href="https://revenuehunters.com" target="_blank" rel="noreferrer" className="group flex flex-col bg-[#111] border-t-4 border-t-brand-cyan border-x border-b border-white/5 hover:border-brand-cyan/50 transition-all duration-300 relative transform md:-translate-y-4">
               <div className="p-10 flex-grow">
                 <h3 className="text-2xl font-bold text-white mb-2 font-sans">
                   Do you need help with <br/>Growing Sales?
@@ -278,11 +229,11 @@ const Home = () => {
                   Automate your outreach and fill your pipeline without burning out your team.
                 </p>
                 <p className="text-white text-sm font-bold mt-4">
-                  Sales Growth Multiplier: Inbound/outbound tools + ASDR (autonomous SDR) technology.
+                  Revenue Hunters: Inbound/outbound tools + ASDR (autonomous SDR) technology.
                 </p>
               </div>
               <div className="px-10 py-6 bg-[#161616] group-hover:bg-brand-cyan group-hover:text-black transition-colors flex justify-between items-center">
-                <span className="font-heading font-bold text-xs uppercase tracking-widest text-white group-hover:text-black">Sales Growth Multiplier</span>
+                <span className="font-heading font-bold text-xs uppercase tracking-widest text-white group-hover:text-black">Revenue Hunters</span>
                 <ArrowUpRight className="w-4 h-4 text-white group-hover:text-black" />
               </div>
             </a>
@@ -313,7 +264,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 8. CTA Section: READY TO EXECUTE? */}
+      {/* CTA Section: READY TO EXECUTE? */}
       <section className="py-32 bg-brand-cyan text-center">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-5xl md:text-7xl font-heading font-bold text-black mb-8 uppercase tracking-wide">
@@ -328,6 +279,22 @@ const Home = () => {
           >
             Get In Touch
           </Link>
+        </div>
+      </section>
+
+      {/* Featured In - SECOND LOCATION (Moved to Bottom) */}
+      <section className="py-16 bg-brand-red border-y border-white/5">
+        <div className="max-w-7xl mx-auto px-6">
+           <div className="flex flex-col md:flex-row flex-wrap justify-between items-center gap-8 md:gap-16">
+             <span className="text-xs font-bold uppercase tracking-widest text-white/80 mb-4 md:mb-0">Featured In</span>
+             <div className="flex flex-wrap justify-center gap-12 md:gap-16 opacity-100 items-center">
+                <span className="text-2xl md:text-3xl font-heading font-bold text-white hover:opacity-80 transition-opacity">WSJ</span>
+                <span className="text-2xl md:text-3xl font-heading font-bold text-white hover:opacity-80 transition-opacity">CBS NEWS</span>
+                <span className="text-2xl md:text-3xl font-heading font-bold text-white hover:opacity-80 transition-opacity">NEWSWEEK</span>
+                <span className="text-2xl md:text-3xl font-heading font-bold text-white hover:opacity-80 transition-opacity">UL</span>
+                <span className="text-2xl md:text-3xl font-heading font-bold text-white hover:opacity-80 transition-opacity">AJIC</span>
+             </div>
+          </div>
         </div>
       </section>
     </div>

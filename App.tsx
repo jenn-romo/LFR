@@ -3,7 +3,6 @@ import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-d
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import About from './pages/About';
-import Experience from './pages/Experience';
 import Media from './pages/Media';
 import Contact from './pages/Contact';
 
@@ -26,7 +25,6 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/experience" element={<Experience />} />
           <Route path="/media" element={<Media />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

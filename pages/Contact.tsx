@@ -13,15 +13,7 @@ const Contact = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
-          <a href="mailto:luis@blackliongrowth.com" className="flex flex-col items-center p-8 bg-white/5 border border-white/10 hover:bg-brand-blue/10 hover:border-brand-blue/30 transition-all duration-300 group">
-            <div className="w-16 h-16 bg-brand-dark flex items-center justify-center rounded-full group-hover:scale-110 transition-transform mb-6 border border-white/10">
-              <Mail className="text-brand-blue w-8 h-8" />
-            </div>
-            <div className="text-xs text-gray-500 uppercase tracking-widest font-bold mb-2">Email</div>
-            <div className="text-lg text-white font-bold text-center break-all">luis@blackliongrowth.com</div>
-          </a>
-          
+        <div className="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
           <a href="https://www.linkedin.com/in/luisfromo/" target="_blank" rel="noreferrer" className="flex flex-col items-center p-8 bg-white/5 border border-white/10 hover:bg-brand-blue/10 hover:border-brand-blue/30 transition-all duration-300 group">
             <div className="w-16 h-16 bg-brand-dark flex items-center justify-center rounded-full group-hover:scale-110 transition-transform mb-6 border border-white/10">
               <Linkedin className="text-brand-blue w-8 h-8" />
