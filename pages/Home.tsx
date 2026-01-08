@@ -54,12 +54,12 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 2. Stats Section */}
+      {/* 2. Stats Section - CENTERED */}
       <section className="py-20 bg-[#050505] border-y border-white/5">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-12">
             {/* Stat 1 */}
-            <div className="flex items-start gap-4">
+            <div className="flex flex-col items-center justify-center text-center gap-4">
               <div className="w-12 h-12 rounded-full bg-blue-900/20 border border-blue-500/20 flex items-center justify-center text-brand-cyan flex-shrink-0">
                 <ShieldCheck size={24} />
               </div>
@@ -69,7 +69,7 @@ const Home = () => {
               </div>
             </div>
              {/* Stat 2 */}
-            <div className="flex items-start gap-4">
+            <div className="flex flex-col items-center justify-center text-center gap-4">
               <div className="w-12 h-12 rounded-full bg-blue-900/20 border border-blue-500/20 flex items-center justify-center text-brand-cyan flex-shrink-0">
                 <TrendingUp size={24} />
               </div>
@@ -79,7 +79,7 @@ const Home = () => {
               </div>
             </div>
              {/* Stat 3 */}
-            <div className="flex items-start gap-4">
+            <div className="flex flex-col items-center justify-center text-center gap-4">
               <div className="w-12 h-12 rounded-full bg-blue-900/20 border border-blue-500/20 flex items-center justify-center text-brand-cyan flex-shrink-0">
                 <Flag size={24} />
               </div>
@@ -92,7 +92,23 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 3. Pillars Section */}
+      {/* 3. Featured In - MOVED HERE */}
+      <section className="py-16 bg-brand-red border-y border-white/5">
+        <div className="max-w-7xl mx-auto px-6">
+           <div className="flex flex-col md:flex-row flex-wrap justify-between items-center gap-8 md:gap-16">
+             <span className="text-xs font-bold uppercase tracking-widest text-white/80 mb-4 md:mb-0">Featured In</span>
+             <div className="flex flex-wrap justify-center gap-12 md:gap-16 opacity-100 items-center">
+                <span className="text-2xl md:text-3xl font-heading font-bold text-white hover:opacity-80 transition-opacity">WSJ</span>
+                <span className="text-2xl md:text-3xl font-heading font-bold text-white hover:opacity-80 transition-opacity">CBS NEWS</span>
+                <span className="text-2xl md:text-3xl font-heading font-bold text-white hover:opacity-80 transition-opacity">NEWSWEEK</span>
+                <span className="text-2xl md:text-3xl font-heading font-bold text-white hover:opacity-80 transition-opacity">UL</span>
+                <span className="text-2xl md:text-3xl font-heading font-bold text-white hover:opacity-80 transition-opacity">AJIC</span>
+             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 4. Pillars Section */}
       <section className="py-24 bg-[#080808]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-16 text-center">
@@ -126,22 +142,6 @@ const Home = () => {
                  Commercializing complex technology from concept to exit. Securing 20+ global patents and establishing new regulatory standards (ASTM).
                </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 4. Featured In - First Instance */}
-      <section className="py-16 bg-brand-red border-y border-white/5">
-        <div className="max-w-7xl mx-auto px-6">
-           <div className="flex flex-col md:flex-row flex-wrap justify-between items-center gap-8 md:gap-16">
-             <span className="text-xs font-bold uppercase tracking-widest text-white/80 mb-4 md:mb-0">Featured In</span>
-             <div className="flex flex-wrap justify-center gap-12 md:gap-16 opacity-100 items-center">
-                <span className="text-2xl md:text-3xl font-heading font-bold text-white hover:opacity-80 transition-opacity">WSJ</span>
-                <span className="text-2xl md:text-3xl font-heading font-bold text-white hover:opacity-80 transition-opacity">CBS NEWS</span>
-                <span className="text-2xl md:text-3xl font-heading font-bold text-white hover:opacity-80 transition-opacity">NEWSWEEK</span>
-                <span className="text-2xl md:text-3xl font-heading font-bold text-white hover:opacity-80 transition-opacity">UL</span>
-                <span className="text-2xl md:text-3xl font-heading font-bold text-white hover:opacity-80 transition-opacity">AJIC</span>
-             </div>
           </div>
         </div>
       </section>
