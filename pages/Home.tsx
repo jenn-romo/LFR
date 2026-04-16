@@ -191,32 +191,9 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Card 1: Execution */}
-            <a href="https://growthsprintsystem.com" target="_blank" rel="noreferrer" className="group flex flex-col bg-[#111] border border-white/5 hover:border-brand-cyan/50 transition-all duration-300">
-              <div className="p-10 flex-grow">
-                <h3 className="text-2xl font-bold text-white mb-2 font-sans">
-                  Do you need help with <br/>Execution?
-                </h3>
-                <p className="text-brand-cyan text-sm mb-8 font-medium">
-                  (Getting the right work done)
-                </p>
-                <div className="w-12 h-0.5 bg-white/20 mb-8"></div>
-                <p className="text-gray-400 text-sm leading-relaxed">
-                  For executives & entrepreneurs who are overwhelmed and 'busy but not progressing'.
-                </p>
-                <p className="text-white text-sm font-bold mt-4">
-                  Growth Sprint System: Prioritization, complexity scoring, and calendar control.
-                </p>
-              </div>
-              <div className="px-10 py-6 bg-[#161616] group-hover:bg-brand-cyan group-hover:text-black transition-colors flex justify-between items-center">
-                <span className="font-heading font-bold text-xs uppercase tracking-widest text-white group-hover:text-black">Growth Sprint System</span>
-                <ArrowUpRight className="w-4 h-4 text-white group-hover:text-black" />
-              </div>
-            </a>
-
+          <div className="grid md:grid-cols-1 max-w-lg mx-auto gap-8">
             {/* Card 2: Sales - Highlighted */}
-            <a href="https://revenuehunters.com" target="_blank" rel="noreferrer" className="group flex flex-col bg-[#111] border-t-4 border-t-brand-cyan border-x border-b border-white/5 hover:border-brand-cyan/50 transition-all duration-300 relative transform md:-translate-y-4">
+            <a href="https://revenuehunters.com" target="_blank" rel="noreferrer" className="group flex flex-col bg-[#111] border-t-4 border-t-brand-cyan border-x border-b border-white/5 hover:border-brand-cyan/50 transition-all duration-300">
               <div className="p-10 flex-grow">
                 <h3 className="text-2xl font-bold text-white mb-2 font-sans">
                   Do you need help with <br/>Growing Sales?
@@ -234,29 +211,6 @@ const Home = () => {
               </div>
               <div className="px-10 py-6 bg-[#161616] group-hover:bg-brand-cyan group-hover:text-black transition-colors flex justify-between items-center">
                 <span className="font-heading font-bold text-xs uppercase tracking-widest text-white group-hover:text-black">Revenue Hunters</span>
-                <ArrowUpRight className="w-4 h-4 text-white group-hover:text-black" />
-              </div>
-            </a>
-
-            {/* Card 3: Content */}
-            <a href="https://contentgrowthmultiplier.com" target="_blank" rel="noreferrer" className="group flex flex-col bg-[#111] border border-white/5 hover:border-brand-cyan/50 transition-all duration-300">
-              <div className="p-10 flex-grow">
-                <h3 className="text-2xl font-bold text-white mb-2 font-sans">
-                  Do you need help with <br/>Content?
-                </h3>
-                <p className="text-brand-cyan text-sm mb-8 font-medium">
-                  (Authority without the time)
-                </p>
-                <div className="w-12 h-0.5 bg-white/20 mb-8"></div>
-                <p className="text-gray-400 text-sm leading-relaxed">
-                  Build your personal brand and authority with minimal effort.
-                </p>
-                <p className="text-white text-sm font-bold mt-4">
-                  Content Growth Multiplier: Daily prompts repurposed into LinkedIn/X/IG posts automatically.
-                </p>
-              </div>
-              <div className="px-10 py-6 bg-[#161616] group-hover:bg-brand-cyan group-hover:text-black transition-colors flex justify-between items-center">
-                <span className="font-heading font-bold text-xs uppercase tracking-widest text-white group-hover:text-black">Content Growth Multiplier</span>
                 <ArrowUpRight className="w-4 h-4 text-white group-hover:text-black" />
               </div>
             </a>

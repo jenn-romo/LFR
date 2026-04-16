@@ -146,18 +146,8 @@ const Layout = ({ children }: { children?: React.ReactNode }) => {
               <h4 className="font-heading font-bold text-black uppercase tracking-widest mb-6 text-sm">Services</h4>
               <ul className="space-y-4 text-gray-600 text-sm">
                  <li>
-                   <a href="https://growthsprintsystem.com" target="_blank" rel="noreferrer" className="hover:text-brand-blue transition-colors flex items-center gap-2 group">
-                     Growth Sprint <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                   </a>
-                 </li>
-                 <li>
                    <a href="https://revenuehunters.com" target="_blank" rel="noreferrer" className="hover:text-brand-blue transition-colors flex items-center gap-2 group">
                      Revenue Hunters <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                   </a>
-                 </li>
-                 <li>
-                   <a href="https://contentgrowthmultiplier.com" target="_blank" rel="noreferrer" className="hover:text-brand-blue transition-colors flex items-center gap-2 group">
-                     Content Multiplier <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                    </a>
                  </li>
               </ul>
